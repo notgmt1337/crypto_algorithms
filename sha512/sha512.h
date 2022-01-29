@@ -4,8 +4,8 @@
  *   
  *   Original author: George Tridimas <tridimasg@cardiff.ac.uk>
  */
-#ifndef SHA256_H
-#define SHA256_H
+#ifndef SHA512_H
+#define SHA512_H
 #include <string.h>
 #include <stdlib.h>
 #include <stdint.h>
@@ -48,7 +48,7 @@ static const uint64_t K[80] = {
 	0x4cc5d4becb3e42b6, 0x597f299cfc657e2a, 0x5fcb6fab3ad6faec, 0x6c44198c4a475817
 };
 
-typedef struct SHA256Context{
+typedef struct SHA512Context{
 	const char* message;
     uint128_t length_in_bits;
 	uint16_t k;
