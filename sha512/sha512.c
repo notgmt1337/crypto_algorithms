@@ -6,9 +6,6 @@
  */
 #include "sha512.h"
 
-#include <stdio.h>
-
-
 static void init_ctx(Context* ctx, const char* message)
 {
     ctx->message = message;
